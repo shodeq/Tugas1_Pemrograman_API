@@ -1,7 +1,7 @@
 import users from '../../../public/data/users.json'
 
 
-export const findAll = async (filters:{name:string, city:string, age:number}) => {
+export const findAll = async (filters:{name:string, city:string, age:string}) => {
     let filterData = users;
 
     if(filters.name){
@@ -23,4 +23,3 @@ export const findAll = async (filters:{name:string, city:string, age:number}) =>
 
     return filterData
 }
-
